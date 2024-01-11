@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body style="background-color: rgb(26, 145, 230);">
+    <div>
+        <p style="text-align: center;">
+            Jackson
+        </p>
+        <span></span>
+        <p style="text-align: center;">
+            Electronics
+        </p>
+    </div>
+    <div>
+        <form name="Registration">
+            <div>
+                <h1 style="text-align: center;">Registration Form</h1>
+                <br>
+                <p style="text-align: center;">Registration your Jackson Electronics product here</p>   
+            </div>
+            <div>
+                <label for="name">First Name:</label>
+                <input type="text" name="Fname" id="Fname" required/>
+                <label for="name" >Last Name:</label>
+                <input type="text" name="Lname" id="Lname" required/>
+            </div>
+            <br>
+            <div>
+                <label for="address">Address #1: </label>
+                <input type="text" name="address1" id="address1" required/>
+                <br>
+                <label for="address">Address #2: </label>
+                <input type="text" name="address2" id="address2" required/>
+                <br>
+                <label for="city">City: </label>
+                <input type="text" name="city" id="city" required/>
+                <label for="state">State: </label>
+                <input type="text" name="state" id="state" required/>
+                <label for="zip">Zip: </label>
+                <input type="text" name="zip" id="zip" required/>
+                <br>
+                <label for="country">Country:</label>
+                <input type="text" name="country" id="country" style="display: inline-block;" value="United States" required/>
+            </div>
+            <hr>
+            <div>
+                <label for="product">Product:</label>
+                <select name="product">
+                    <option value="1">ScanMaster</option>
+                    <option value="2">ScanMaster Plus</option>
+                    <option value="3">ScanMaster Pro</option>
+                    <option value="4">ScanMaster Pro Max</option>
+                    <option value="5">ScanMaster Pro Elite</option>
+                </select>
+                <br>
+                <label for="date">Date Purchased:</label>
+                <input type="text" name="date" id="date" required/>
+                <br>
+                <label for="serial">Serial #:</label>
+                <input type="text" name="serial" id="serial" required/>
+                <br>
+                <label for="usefor">Used for:</label>
+                <input type="radio" name="home" value="Home"/>
+                <label for="home">Home</label>
+                <input type="radio" name="education" value="Educational Instituition"/>
+                <label for="education">Educational Instituition</label>
+                <br>
+                <input type="radio" name="business" value="Business"/>
+                <label for="business">Business</label>
+                <input type="radio" name="other" value="Other"/>
+                <label for="other">Other</label>
+                <br>
+                <input type="radio" name="Govermment" value="Govermment"/>
+                <label for="Govermment">Govermment</label>
+                <br>
+                <label for="System">System (check all that apply):</label>
+                <input type="checkbox" name="Windows" value="Windows"/>
+                <label for="Windows">Windows</label>
+                <input type="checkbox" name="unix" value="Unix"/>
+                <label for="unix">UNIX</label>
+                <br>
+                <input type="checkbox" name="Macintosh" value="Macintosh"/>
+                <label for="Macintosh">Macintosh</label>
+                <input type="checkbox" name="other" value="Other"/>
+                <label for="other">Other</label>
+            </div>
+            <hr>
+            <label for="comments">Comments?:</label>
+            <br>
+            <textarea type="comments" name="comments" id="comments" rows="5" cols="50"></textarea>
+            <br>
+            <input type="submit" value="Click to register"/>
+            <input type="submit" value="Click to cancle"/>
+        </form>
+    </div>
+</body>
+</html>
